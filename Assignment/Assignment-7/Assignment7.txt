@@ -1,0 +1,7 @@
+Customers	Accounts	State
+Consumers	Checking	CA
+VIPconsumer	Savings	NV
+Business	Mortgages	UT
+Non-Profit	ConsumerLoan	ID
+	commercialLoan	AZ
+		NM

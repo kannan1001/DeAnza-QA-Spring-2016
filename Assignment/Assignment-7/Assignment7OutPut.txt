@@ -1,0 +1,110 @@
+
+TEST CASES
+case	Customers	Accounts	State	pairings
+1	Consumers	Checking	CA	3
+2	VIPconsumer	Savings	CA	3
+3	Business	Mortgages	CA	3
+4	Non-Profit	ConsumerLoan	CA	3
+5	VIPconsumer	Checking	NV	3
+6	Consumers	Savings	NV	3
+7	Non-Profit	Mortgages	NV	3
+8	Business	ConsumerLoan	NV	3
+9	Business	Checking	UT	3
+10	Non-Profit	Savings	UT	3
+11	Consumers	Mortgages	UT	3
+12	VIPconsumer	ConsumerLoan	UT	3
+13	Non-Profit	Checking	ID	3
+14	Business	Savings	ID	3
+15	VIPconsumer	Mortgages	ID	3
+16	Consumers	ConsumerLoan	ID	3
+17	Consumers	commercialLoan	AZ	3
+18	VIPconsumer	Checking	AZ	2
+19	Business	Savings	AZ	2
+20	Non-Profit	Mortgages	AZ	2
+21	VIPconsumer	commercialLoan	NM	3
+22	Consumers	Checking	NM	2
+23	Non-Profit	Savings	NM	2
+24	Business	Mortgages	NM	2
+25	Business	commercialLoan	CA	2
+26	Non-Profit	commercialLoan	NV	2
+27	~Consumers	commercialLoan	UT	1
+28	~VIPconsumer	commercialLoan	ID	1
+29	~Consumers	ConsumerLoan	AZ	1
+30	~VIPconsumer	ConsumerLoan	NM	1
+
+PAIRING DETAILS
+var1	var2	value1	value2	appearances	cases
+State	Accounts	CA	Checking	1	1
+State	Accounts	CA	Savings	1	2
+State	Accounts	CA	Mortgages	1	3
+State	Accounts	CA	ConsumerLoan	1	4
+State	Accounts	CA	commercialLoan	1	25
+State	Accounts	NV	Checking	1	5
+State	Accounts	NV	Savings	1	6
+State	Accounts	NV	Mortgages	1	7
+State	Accounts	NV	ConsumerLoan	1	8
+State	Accounts	NV	commercialLoan	1	26
+State	Accounts	UT	Checking	1	9
+State	Accounts	UT	Savings	1	10
+State	Accounts	UT	Mortgages	1	11
+State	Accounts	UT	ConsumerLoan	1	12
+State	Accounts	UT	commercialLoan	1	27
+State	Accounts	ID	Checking	1	13
+State	Accounts	ID	Savings	1	14
+State	Accounts	ID	Mortgages	1	15
+State	Accounts	ID	ConsumerLoan	1	16
+State	Accounts	ID	commercialLoan	1	28
+State	Accounts	AZ	Checking	1	18
+State	Accounts	AZ	Savings	1	19
+State	Accounts	AZ	Mortgages	1	20
+State	Accounts	AZ	ConsumerLoan	1	29
+State	Accounts	AZ	commercialLoan	1	17
+State	Accounts	NM	Checking	1	22
+State	Accounts	NM	Savings	1	23
+State	Accounts	NM	Mortgages	1	24
+State	Accounts	NM	ConsumerLoan	1	30
+State	Accounts	NM	commercialLoan	1	21
+State	Customers	CA	Consumers	1	1
+State	Customers	CA	VIPconsumer	1	2
+State	Customers	CA	Business	2	3, 25
+State	Customers	CA	Non-Profit	1	4
+State	Customers	NV	Consumers	1	6
+State	Customers	NV	VIPconsumer	1	5
+State	Customers	NV	Business	1	8
+State	Customers	NV	Non-Profit	2	7, 26
+State	Customers	UT	Consumers	2	11, 27
+State	Customers	UT	VIPconsumer	1	12
+State	Customers	UT	Business	1	9
+State	Customers	UT	Non-Profit	1	10
+State	Customers	ID	Consumers	1	16
+State	Customers	ID	VIPconsumer	2	15, 28
+State	Customers	ID	Business	1	14
+State	Customers	ID	Non-Profit	1	13
+State	Customers	AZ	Consumers	2	17, 29
+State	Customers	AZ	VIPconsumer	1	18
+State	Customers	AZ	Business	1	19
+State	Customers	AZ	Non-Profit	1	20
+State	Customers	NM	Consumers	1	22
+State	Customers	NM	VIPconsumer	2	21, 30
+State	Customers	NM	Business	1	24
+State	Customers	NM	Non-Profit	1	23
+Accounts	Customers	Checking	Consumers	2	1, 22
+Accounts	Customers	Checking	VIPconsumer	2	5, 18
+Accounts	Customers	Checking	Business	1	9
+Accounts	Customers	Checking	Non-Profit	1	13
+Accounts	Customers	Savings	Consumers	1	6
+Accounts	Customers	Savings	VIPconsumer	1	2
+Accounts	Customers	Savings	Business	2	14, 19
+Accounts	Customers	Savings	Non-Profit	2	10, 23
+Accounts	Customers	Mortgages	Consumers	1	11
+Accounts	Customers	Mortgages	VIPconsumer	1	15
+Accounts	Customers	Mortgages	Business	2	3, 24
+Accounts	Customers	Mortgages	Non-Profit	2	7, 20
+Accounts	Customers	ConsumerLoan	Consumers	2	16, 29
+Accounts	Customers	ConsumerLoan	VIPconsumer	2	12, 30
+Accounts	Customers	ConsumerLoan	Business	1	8
+Accounts	Customers	ConsumerLoan	Non-Profit	1	4
+Accounts	Customers	commercialLoan	Consumers	2	17, 27
+Accounts	Customers	commercialLoan	VIPconsumer	2	21, 28
+Accounts	Customers	commercialLoan	Business	1	25
+Accounts	Customers	commercialLoan	Non-Profit	1	26

@@ -1,1 +1,1 @@
-This folder contains automating test cases using SELENIUM IDE.
+This folder contains Test Cases and Test Suite to automate using SELENIUM IDE.

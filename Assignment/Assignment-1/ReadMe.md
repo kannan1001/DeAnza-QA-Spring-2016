@@ -1,1 +1,1 @@
-This folder contains deanza website checked through various websites.
+This folder contains the report of the first bug reported via Bugzilla.
